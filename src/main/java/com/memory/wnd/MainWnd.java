@@ -22,7 +22,8 @@ import com.memory.event.MainWndEvent;
  * CSDN博客:http://blog.csdn.net/qq969422014
  * 
  * 主窗体显示界面
- * **/
+ *
+ * @author longwenhao**/
 public class MainWnd extends JFrame
 {
 	private static final long serialVersionUID = 1L;
@@ -54,7 +55,8 @@ public class MainWnd extends JFrame
 		UIManager.put("InternalFrame.titleFont", new java.awt.Font("宋体", 0, 12));
 		EventQueue.invokeLater(new Runnable() 
 		{
-			public void run() 
+			@Override
+			public void run()
 			{
 				try 
 				{

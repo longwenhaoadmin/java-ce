@@ -27,7 +27,7 @@ public interface Kernel32_DLL extends StdCallLibrary
 	 * 加载DLL文件库
 	 * 指定編碼為UNICODE_OPTIONS,不然要亂碼
 	 * */
-	Kernel32_DLL INSTANCE = (Kernel32_DLL)Native.loadLibrary("Kernel32", 
+	Kernel32_DLL INSTANCE = (Kernel32_DLL)Native.load("Kernel32",
 			Kernel32_DLL.class, W32APIOptions.UNICODE_OPTIONS);
 	
 	/**
